@@ -1,0 +1,306 @@
+# CSW WORKSHOP — GITHUB WORKFLOW
+
+Purpose:
+This repository is used to store and track all Python programming work
+done for the CSW Workshop.
+
+The GitHub repository acts as the central/cloud copy of the project.
+The Home PC and College PC each have a local working copy.
+
+## WORKFLOW OVERVIEW
+
+```
+                GITHUB
+            (Master Copy)
+             /         \
+            /           \
+      HOME PC        COLLEGE PC
+         |                |
+       Code             Code
+         |                |
+       Push             Push
+         \                /
+          \              /
+           ---- GITHUB ----
+```
+
+1. WHEN STARTING WORK
+
+---
+
+Before writing or changing any code, ALWAYS get the latest version
+from GitHub.
+
+Run:
+
+```
+git pull
+```
+
+Do this on BOTH the Home PC and College PC.
+
+This prevents you from accidentally working on an outdated version.
+
+2. WHEN CODING
+
+---
+
+After running "git pull", work normally.
+
+Create or edit Python files inside the appropriate chapter folder.
+
+Example:
+
+```
+CSW-Workshop/
+|
++-- CH-1/
+|     +-- program1.py
+|     +-- program2.py
+|
++-- CH-2/
+|     +-- program1.py
+|     +-- program2.py
+|
++-- README.md
+```
+
+## 3. WHEN FINISHED CODING
+
+First check which files have changed:
+
+```
+git status
+```
+
+Then add the changes:
+
+```
+git add .
+```
+
+Create a commit describing what you did:
+
+```
+git commit -m "Added CH-2 workshop programs"
+```
+
+Finally, upload the changes to GitHub:
+
+```
+git push
+```
+
+## 4. HOME PC WORKFLOW
+
+Before starting:
+
+```
+git pull
+```
+
+Then:
+
+```
+CODE
+  |
+  v
+TEST PROGRAMS
+  |
+  v
+git status
+  |
+  v
+git add .
+  |
+  v
+git commit -m "Description of changes"
+  |
+  v
+git push
+```
+
+## 5. COLLEGE PC WORKFLOW
+
+Before starting:
+
+```
+git pull
+```
+
+Then attend the workshop and write/program/test your Python code.
+
+When finished:
+
+```
+git status
+
+git add .
+
+git commit -m "Description of changes"
+
+git push
+```
+
+## 6. FIRST-TIME SETUP ON A NEW COMPUTER
+
+If using a computer for the first time, clone the repository:
+
+```
+git clone https://github.com/NOTYOURSHWARMA/CSW-Workshop.git
+```
+
+Then enter the repository:
+
+```
+cd CSW-Workshop
+```
+
+After the first clone, DO NOT clone the repository again every time.
+
+Just use:
+
+```
+git pull
+```
+
+before starting work.
+
+7. IMPORTANT COMMANDS TO REMEMBER
+
+---
+
+```
+git pull
+= Download the latest changes from GitHub.
+
+git add .
+= Prepare all changed/new files for committing.
+
+git commit -m "message"
+= Record the changes with a description.
+
+git push
+= Upload the committed changes to GitHub.
+
+git status
+= Check what has changed.
+```
+
+## 8. GOLDEN RULE
+
+ALWAYS:
+
+```
+PULL → CODE → TEST → ADD → COMMIT → PUSH
+```
+
+Before working:
+
+```
+git pull
+```
+
+After finishing:
+
+```
+git add .
+git commit -m "What I changed"
+git push
+```
+
+## 9. EXAMPLE
+
+HOME PC:
+
+```
+git pull
+
+[Write Python programs]
+
+git add .
+git commit -m "Added CH-1 programs"
+git push
+```
+
+COLLEGE PC:
+
+```
+git pull
+
+[Write Python programs]
+
+git add .
+git commit -m "Added CH-2 workshop programs"
+git push
+```
+
+HOME PC AGAIN:
+
+```
+git pull
+```
+
+Now the Home PC has the latest work from College.
+
+10. IMPORTANT NOTES
+
+---
+
+• GitHub is the central/cloud copy of the CSW Workshop repository.
+
+• The local folder on each PC is the working copy.
+
+• The Home PC and College PC do NOT need to be connected to each other.
+
+• They only need internet access when pulling from or pushing to GitHub.
+
+• If a computer is offline, you can still write and test Python code.
+Push the changes once internet access is available.
+
+• Do not use "git clone" every time you want to work.
+Clone only once per computer.
+
+• Always run "git pull" before starting work.
+
+• Always "git push" after finishing important work.
+
+## QUICK REFERENCE
+
+START WORK:
+
+```
+git pull
+```
+
+FINISH WORK:
+
+```
+git status
+git add .
+git commit -m "Description of changes"
+git push
+```
+
+THE WHOLE PROCESS:
+
+```
+GITHUB
+   ↓
+git pull
+   ↓
+CODE
+   ↓
+TEST
+   ↓
+git add .
+   ↓
+git commit
+   ↓
+git push
+   ↓
+GITHUB
+```
+
+GitHub Repository:
+https://github.com/NOTYOURSHWARMA/CSW-Workshop
