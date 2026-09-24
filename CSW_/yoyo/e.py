@@ -1,0 +1,8 @@
+print("with prefix")
+print(f"binary of 255 is {bin(255)}")
+print(f"octal of 255 is {oct(255)}")
+print(f"hexadecimal of 255 is {hex(255)}")
+print('With out prefix')
+print(f"binary of 255 is {bin(255)[2:]}")
+print(f"octal of 255 is {oct(255)[2:]}")
+print(f"hexadecimal of 255 is {hex(255)[2:]}")
